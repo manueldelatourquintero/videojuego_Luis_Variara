@@ -120,7 +120,7 @@ def game():
     pulsada = pygame.key.get_pressed()
 
     if pulsada[K_v]:
-        PANTALLA.blit(valores, [0,0])
+        PANTALLA.blit(valores, [0,0])  
 
     if pulsada[K_ESCAPE]:
         pygame.quit()
@@ -157,12 +157,11 @@ def game():
     else:
         PANTALLA.blit(font.render(text, True, (0, 0, 0)), (32, 48))
         pygame.display.flip()
-        clock.tick(60)
+        clock.tick(60)  
    
     #collide = pygame.Rect.colliderect(rectanguloFondo, rectanguloPersonaje)
 
-    #PANTALLA.blit(obstaculo, [700, 200])
-    
+    #PANTALLA.blit(obstaculo, [700, 200])   
 
     pygame.display.update()
     #Llamada a la función de actualización de la ventana
@@ -225,3 +224,4 @@ pygame.quit()
 
 if __name__ == '__main__':
     print("Hola mundo")
+    gameMenu()
