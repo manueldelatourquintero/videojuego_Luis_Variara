@@ -2,7 +2,6 @@
 import pygame, sys
 from pygame.surface import *
 from pygame import *
-from pygame_colliders import *
 from random import *
 import random
 from pygame.locals import *
@@ -222,3 +221,7 @@ while True:
     game()
 #Salida del juego
 pygame.quit() 
+
+
+if __name__ == '__main__':
+    print("Hola mundo")
